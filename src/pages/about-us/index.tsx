@@ -31,7 +31,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
         </Head>
           
         <div>
-          <h1>{title}</h1>
+          <h1>*{title}*</h1>
           <p>{aboutUsTxt}</p>
         </div>
       </Layout>
