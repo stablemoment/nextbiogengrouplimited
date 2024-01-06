@@ -6,6 +6,7 @@ import Layout from '@/components/layout';
 interface AboutProps {
   data: {
     aboutUs?: string;
+    heroImage?: string;
   };
 }
 
@@ -13,12 +14,20 @@ const About: React.FC<AboutProps> = ({ data }) => {
 
   const title = 'About Our Company';
   const aboutUsTxt = data.aboutUs || '';
+  const heroImage = data.heroImage || '';
 
   return (
     <>
       <Layout>
         <Head>
           <title>About Us</title>
+          <meta name="description" content={aboutUsTxt} />
+          <meta
+            property="og:title"
+            content={`${title}`}
+          />
+          <meta property="og:description" content={aboutUsTxt} />
+          <meta property="og:image" content={heroImage} />
         </Head>
           
         <div>
