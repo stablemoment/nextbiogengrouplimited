@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { getDocs, collection } from 'firebase/firestore';
 import { firestore } from '@/firebaseConfig';
 import Head from 'next/head';
