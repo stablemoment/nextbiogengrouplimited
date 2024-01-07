@@ -11,6 +11,7 @@ export default function Home() {
       <Layout>
         <Head>
           <title>Next Server</title>
+          <link rel="canonical" href="https://next.biogengroupltd.com" />
         </Head>
         <main className={`${styles.main} ${inter.className}`}>
           <h1>This Is A Next Server</h1>

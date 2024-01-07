@@ -22,6 +22,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
         <Head>
           <title>About Us</title>
           <meta name="description" content={aboutUsTxt} />
+          <link rel="canonical" href="https://next.biogengroupltd.com/about-us" />
           <meta
             property="og:title"
             content={`${title}`}
