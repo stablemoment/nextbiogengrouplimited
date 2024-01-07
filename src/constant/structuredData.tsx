@@ -1,7 +1,4 @@
-import Head from 'next/head';
-
 const StructuredData = () => (
-  <>
     <script type="application/ld+json">
       {`
         {
@@ -15,7 +12,6 @@ const StructuredData = () => (
         }
       `}
     </script>
-  </>
 );
 
 export default StructuredData;
