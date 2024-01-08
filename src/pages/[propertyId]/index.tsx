@@ -70,12 +70,12 @@ const PropertyDetail: React.FC<PropertyDetailProp> = ({ data }) => {
     return (
         <Layout>
           <Head>
-            <title>{propertyName}</title>
+            <title>{`${propertyName} - ${propertyType}`}</title>
             <meta name="description" content={description} />
             <link rel="canonical" href={canonicalUrl} />
             <meta
               property="og:title"
-              content={`${propertyName}`}
+              content={`${propertyName} - ${propertyType}`}
             />
             <meta property="og:description" content={description} />
             <meta property="og:image" content={coverPicture} />
