@@ -2,6 +2,7 @@ import { getDocs, collection } from 'firebase/firestore';
 import { firestore } from '@/firebaseConfig';
 import Head from 'next/head';
 import Layout from '@/components/layout';
+import { APPLICATION } from '@/constant/constants';
 
 interface AboutProps {
   data: {
@@ -13,36 +14,32 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ data }) => {
 
   const title = 'About Our Company';
-  const aboutUsTxt = data.aboutUs || '';
-  const heroImage = data.heroImage || '';
 
   return (
-    <>
-      <Layout>
-        <Head>
-          <title>About Us</title>
-          <meta name="description" content={aboutUsTxt} />
-          <link rel="canonical" href="https://next.biogengroupltd.com/about-us" />
-          <meta
-            property="og:title"
-            content={`${title}`}
+    <Layout>
+      <Head>
+        <title>About Us</title>
+        <meta name="description" content={data.aboutUs || ''} />
+        <link rel="canonical" href="https://next.biogengroupltd.com/about-us" />
+        <meta
+          property="og:title"
+          content={`${title}`}
           />
-          <meta property="og:description" content={aboutUsTxt} />
-          <meta property="og:image" content={heroImage} />
-        </Head>
-          
-        <div>
-          <h1>*{title}*</h1>
-          <p>{aboutUsTxt}</p>
-        </div>
-      </Layout>
-    </>
+          <meta property="og:description" content={data.aboutUs || ''} />
+          <meta property="og:image" content={data.heroImage || ''} />
+      </Head>
+            
+      <div>
+        <h1>*{title}*</h1>
+        <p>{data.aboutUs || ''}</p>
+      </div>
+    </Layout>
   );
 };
 
 export async function getServerSideProps() {
   try {
-    const appCollection = collection(firestore, 'application');
+    const appCollection = collection(firestore, APPLICATION);
     const querySnapshot = await getDocs(appCollection);
 
     if (!querySnapshot.empty) {

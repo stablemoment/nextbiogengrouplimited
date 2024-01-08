@@ -7,6 +7,9 @@ const nextConfig = {
     priority: 0.5,
     changefreq: "daily",
   },
+  images: {
+    domains: ["firebasestorage.googleapis.com"],
+  },
 };
 
 module.exports = nextConfig;
