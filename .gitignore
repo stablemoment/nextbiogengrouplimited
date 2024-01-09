@@ -40,4 +40,3 @@ next-env.d.ts
 .env.local
 
 /public/robots.txt
-/public/sitemap.xml
