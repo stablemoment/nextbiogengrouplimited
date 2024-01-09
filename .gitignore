@@ -38,5 +38,3 @@ next-env.d.ts
 # Ignore the generated sitemap.xml file
 /sitemap.xml
 .env.local
-
-/public/robots.txt
