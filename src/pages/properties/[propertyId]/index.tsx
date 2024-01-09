@@ -65,7 +65,7 @@ const PropertyDetail: React.FC<PropertyDetailProp> = ({ data }) => {
         state: ''
     };
     
-    const canonicalUrl = `https://next.biogengroupltd.com/${propertyId ?? ''}`;
+    const canonicalUrl = `https://next.biogengroupltd.com/properties/${propertyId ?? ''}`;
 
     return (
         <Layout>
