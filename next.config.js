@@ -1,15 +1,11 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
+
 const nextConfig = {
   reactStrictMode: true,
-  sitemap: {
-    baseUrl: "https://next.biogengroupltd.com",
-    autoLastmod: true,
-    priority: 0.5,
-    changefreq: "daily",
-  },
   images: {
     domains: ["firebasestorage.googleapis.com"],
   },
+  // Other configurations...
 };
 
 module.exports = nextConfig;

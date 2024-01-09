@@ -160,7 +160,6 @@ export async function getServerSideProps({ params }: { params: { propertyId: str
     }
 }
 
-
 const fetchData = async (propertyId: string) => {
     try {
         // Assuming firestore and PROPERTIES are defined
