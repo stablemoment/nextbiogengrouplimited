@@ -7,3 +7,4 @@ Host: https://next.biogengroupltd.com
 
 # Sitemaps
 Sitemap: https://next.biogengroupltd.com/sitemap.xml
+Sitemap: https://next.biogengroupltd.com/api/sitemap
