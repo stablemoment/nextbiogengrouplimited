@@ -3,5 +3,5 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://next.biogengroupltd.com/sitemap.xml?v=2
-Sitemap: https://next.biogengroupltd.com/api/sitemap?v=2
+Sitemap: https://next.biogengroupltd.com/sitemap.xml
+Sitemap: https://next.biogengroupltd.com/api/sitemap
