@@ -2,7 +2,7 @@
     "framework": "next",
     "devCommand": "next dev",
     "buildCommand": "next build",
-    "startCommand": "next start",
+    "startDevCommand": "next start",
     "generateCommand": "next-sitemap",
     "lintCommand": "next lint",
     "postbuild": "next-sitemap",
