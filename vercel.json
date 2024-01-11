@@ -1,8 +1,15 @@
 {
     "framework": "next",
-    "devCommand": "next dev",
-    "buildCommand": "next build",
-    "start": "next start",
+    "functions": {
+      "start": "next start"
+    },
+    "builds": [
+      { "src": "public/**/*", "use": "@vercel/static" },
+      { "src": "next.config.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/" }
+    ],
     "generateCommand": "next-sitemap",
     "lintCommand": "next lint",
     "postbuild": "next-sitemap",
