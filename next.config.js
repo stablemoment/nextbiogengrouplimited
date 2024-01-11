@@ -5,6 +5,14 @@ const nextConfig = {
   images: {
     domains: ["firebasestorage.googleapis.com"],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/sitemap.xml",
+        destination: "/api/sitemap",
+      },
+    ];
+  },
   // Other configurations...
 };
 
